@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+<head>
+  <title>Sample Form Actions</title>
+</head>
+
+<body style="margin: 0; height: 100%; font-family: arial;">
+
+  <div style="height: 100%; background: #00A3D9;">
+    <div style="text-align: center; padding: 100px 0; background: #00BFFF;">
+      <h1 style="color: #fff;">Sound Control App</h1>
+    </div>
+    <div style="text-align: center; padding: 50px 0;">
+      <h2 style="color: #fff;">Login Form</h2>
+      <form style="text-align: left; max-width: 600px; margin: 0 auto;" action="/cgi-bin/upload.cgi" method="post" enctype="multipart/form-data">
+        <input id="user-name" type="text" style="padding: 10px; width: 100%; border: 1px solid rgba(0,0,0,0.4); border-radius: 4px; color: #555; margin-bottom: 20px;" placeholder="Enter Your Name" />
+        <input type="password" style="padding: 10px; width: 100%; border: 1px solid rgba(0,0,0,0.4); border-radius: 4px; color: #555;" placeholder="Enter Your Password" />
+        File to upload: <input type="file" name="fileSelection">
+        <input type="submit" style="display: block; background: #444; border: none; padding: 10px 50px; margin: 30px auto; color: #fff; cursor: pointer;" />
+      </form>
+    </div>
+    <div style="text-align: center; padding: 50px 0; background: #B6B455;">
+      <h2 style="color: #444;">Your Input</h2>
+      <div id="info-div" style="padding: 20px; line-hieght: 40px; max-width: 400px; min-height: 40px; background: rgba(255,255,255,0.6); margin: 0 auto; border-radius: 4px;">
+        Test Block</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
