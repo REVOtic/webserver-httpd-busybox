@@ -3,21 +3,28 @@
 
 <head>
   <title>Sample Form Actions</title>
+  <script src="saveAuth.js"></script>
 </head>
 
 <body style="margin: 0; height: 100%; font-family: arial;">
 
   <div style="height: 100%; background: #00A3D9;">
     <div style="text-align: center; padding: 100px 0; background: #00BFFF;">
-      <h1 style="color: #fff;">Sound Control App</h1>
+      <h1 style="color: #fff;">Auth App</h1>
     </div>
     <div style="text-align: center; padding: 50px 0;">
       <h2 style="color: #fff;">Login Form</h2>
+      <form style="text-align: left; max-width: 600px; margin: 0 auto;">
+        <input id="username" type="text" style="padding: 10px; width: 100%; border: 1px solid rgba(0,0,0,0.4); border-radius: 4px; color: #555; margin-bottom: 20px;" placeholder="Enter Your Name" />
+        <input id="password" type="password" style="padding: 10px; width: 100%; border: 1px solid rgba(0,0,0,0.4); border-radius: 4px; color: #555;" placeholder="Enter Your Password" />
+        <input type="button" style="display: block; background: #444; border: none; padding: 10px 50px; margin: 30px auto; color: #fff; cursor: pointer;" onclick='saveSettings()' value="Save Auth File"/>
+      </form>
+    </div>
+    <div style="text-align: center; padding: 50px 0;">
+      <h2 style="color: #fff;">Upload Form</h2>
       <form style="text-align: left; max-width: 600px; margin: 0 auto;" action="/cgi-bin/upload.cgi" method="post" enctype="multipart/form-data">
-        <input id="user-name" type="text" style="padding: 10px; width: 100%; border: 1px solid rgba(0,0,0,0.4); border-radius: 4px; color: #555; margin-bottom: 20px;" placeholder="Enter Your Name" />
-        <input type="password" style="padding: 10px; width: 100%; border: 1px solid rgba(0,0,0,0.4); border-radius: 4px; color: #555;" placeholder="Enter Your Password" />
         File to upload: <input type="file" name="fileSelection">
-        <input type="submit" style="display: block; background: #444; border: none; padding: 10px 50px; margin: 30px auto; color: #fff; cursor: pointer;" />
+        <input type="submit" style="display: block; background: #444; border: none; padding: 10px 50px; margin: 30px auto; color: #fff; cursor: pointer;" value="Upload"/>
       </form>
     </div>
     <div style="text-align: center; padding: 50px 0; background: #B6B455;">
